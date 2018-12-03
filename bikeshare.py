@@ -190,11 +190,11 @@ def pfive(indv_data,df):
     if indv_data.lower() == 'yes':
         print(df[:5])
         df1=df.iloc[5:len(df),]
-        indv_data1 = input('\nWould you like to see 5 more individual data? Enter yes or no.\n')
+        indvData1 = input('\nWould you like to see 5 more individual data? Enter yes or no.\n')
         if len(df1)<5:
             print('No more than 5 data to show!')
         else:
-            pfive(indv_data1,df1)
+            pfive(indvData1,df1)
 
 def main():
     while True:
