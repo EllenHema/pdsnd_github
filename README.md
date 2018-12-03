@@ -7,7 +7,7 @@ Explore **Bikeshare** Data in Python
 ### Description
 This is a project utilized **Bikeshare** data of Chicago, New York City and Washington to explore the **Bikeshare** activity patterns in these three major cities and summary statistics insights.
 
-The program uses interactive user interface to actively take user input to filter data.
+The program uses **interactive user interface** to actively take user input to filter data.
 
 Also the program provided the functionality of previewing row data based on user's needs.
 
