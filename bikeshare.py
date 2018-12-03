@@ -174,10 +174,6 @@ def user_stats(df):
     if 'Birth Year' not in df.columns or 'Gender' not in df.columns:
         print('Sorry, the dataset does not have Gender or Birth Year data available.')
     else:
-        #Display counts of gender
-        gender = df['Gender'].value_counts()
-        print('\nThe breakdown of genders are:\n',gender)
-
         #Display earliest, most recent, and most common year of birth
         early_birth = df['Birth Year'].min()
         recent_birth = df['Birth Year'].max()
@@ -192,11 +188,11 @@ def pfive(indv_data,df):
     if indv_data.lower() == 'yes':
         print(df[:5])
         df1=df.iloc[5:len(df),]
-        indv_data1 = input('\nWould you like to see 5 more individual data? Enter yes or no.\n')
+        indvData1 = input('\nWould you like to see 5 more individual data? Enter yes or no.\n')
         if len(df1)<5:
             print('No more than 5 data to show!')
         else:
-            pfive(indv_data1,df1)
+            pfive(indvData1,df1)
 
 def main():
     while True:
