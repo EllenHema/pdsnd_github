@@ -172,10 +172,6 @@ def user_stats(df):
     if 'Birth Year' not in df.columns or 'Gender' not in df.columns:
         print('Sorry, the dataset does not have Gender or Birth Year data available.')
     else:
-        #Display counts of gender
-        gender = df['Gender'].value_counts()
-        print('\nThe breakdown of genders are:\n',gender)
-
         #Display earliest, most recent, and most common year of birth
         early_birth = df['Birth Year'].min()
         recent_birth = df['Birth Year'].max()
